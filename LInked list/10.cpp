@@ -15,7 +15,7 @@ int main() {
        
        
        node2 ->data =20;
-    //    node2 ->next = NULL;
+       node2 ->next = NULL;
        head->next = node2;
        cout<<"Data = "<<head -> data<<endl <<"Next = "<<head ->next<<endl;
        
@@ -24,8 +24,8 @@ int main() {
        Second->data=40;
        Second->next=NULL;
        node2-> next = Second;
-       cout<<"Data = "<<node2 -> data<<endl <<"Next= "<<node2->next <<endl;
-        cout<<"Data = "<<Second -> data<<endl <<"Next = "<<Second ->next<<endl;
+       cout<<"Data = "<<node2 -> data<<endl <<"Next = "<<node2->next <<endl;
+       cout<<"Data = "<<Second -> data<<endl <<"Next = "<<Second ->next<<endl;
 
 
    return 0;
