@@ -7,10 +7,12 @@ struct Node {
 int main() {
     //Dynamically Allocating memory in heap and returning the address
        Node *head  =new Node();
-
+       head -> data = 10;
+       head ->next=NULL;
        //Next node 
        Node *node2 = new Node();
-       head -> data = 10;
+       
+       
        node2 ->data =20;
        node2 ->next = NULL;
        head->next = node2;
