@@ -16,22 +16,25 @@ int main() {
   Node *head,*temp;
   head=temp=NULL;
   for(int i=0; i<n; i++){
-     cout<<"Enter data: ";
+     cout<<"Enter data: "<<endl;
      cin>>key;
 
      Node *newnode= new Node(key);
      if(head==NULL){
         head=newnode;
-        head=temp;
+        temp=head;
      }
      else {
         temp->next = newnode;
         temp=newnode;
      }
   }
+  cout<<" YOUR OUTPUT IS -- ";
   Node *current=head;
   while(current!=NULL){
-    cout<<current->data<<" ";
-    current=current->next 
+    cout<<current->data<<"->";
+    current=current->next;
 }
+cout<<"NULL"<<endl;
+   return 0;
 }

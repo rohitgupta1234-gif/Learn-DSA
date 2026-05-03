@@ -21,16 +21,22 @@ int main() {
 
     for(int i=0; i<n; i++){
         if(Head==NULL){
-        Head=new Node(arr[i]);
-        tail=Head;
-    }
-    else {
-      Node *temp=new Node(arr[i]);
-      temp=temp->next;
-      tail=temp;
+            Head= new Node(arr[i]);
+            tail = Head;
+        }
+        else {
+            
+                tail->Next = new Node(arr[i]);
+                tail = tail->Next;
+            }
+        }
+    
 
-        
-      }
+    Node *temp = Head;
+   while(temp!=NULL){
+      cout<<temp->data<<" ";
+      temp = temp->Next;
+   }
+   return 0;
+    
     }
-    }
-}
